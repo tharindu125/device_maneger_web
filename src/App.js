@@ -8,6 +8,7 @@ import ShowDetails from './pages/showDetails';
 import AllShow from './pages/AllShow';
 import SingleShow from './pages/SingleShow';
 import Navbar from './components/navbar';
+import SingleShowLogin from './pages/SingleShowLogin';
 
 
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path ="/showdetails" element={<ShowDetails/>}/>
                 <Route path='/AllShow' element={<AllShow/>}/>
                 <Route path='/SingleShow' element={<SingleShow/>}/>
+                <Route path='/SingleShowLogin' element={<SingleShowLogin/>}/>
             </Routes>
         </BrowserRouter>
         

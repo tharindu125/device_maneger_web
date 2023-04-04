@@ -159,3 +159,12 @@ input{
 .detailForm{
     margin: 5px;
 }
+
+/* SingleShowLogin */
+.SingleShowLogin_H{
+    color: white;
+    padding-bottom: 0.5rem;
+    padding-top: 4rem;
+    text-shadow: 2px 2px 30px rgb(255, 255, 255);
+    font-size: 40px;
+}

@@ -16,7 +16,7 @@ export default function showDetails() {
               <div>
                     <h1 className='show_h1'>To Show a Location & Devices</h1>
                     
-                    <a href="./SingleShow" className='a'>
+                    <a href="./SingleShowLogin" className='a'>
                         <button class="show_btn"><b>Click</b></button>
                     </a>
               </div>
