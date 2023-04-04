@@ -33,12 +33,13 @@ export default function Location() {
 
   return (
     <div>
-        <div>
+        <div className='locationMain'>
+            <h1 className='location_H'>Add Your Location</h1>
             <input type='text' placeholder='location Name' value={l_name} onChange={e => setName(e.target.value)} /><br/>
             <input type='textarea' placeholder='Location Address' value={address} onChange={e => setAddress(e.target.value)} /><br/>
             <input type='string' placeholder='mobile Number' value={p_number} onChange={e => setNumber(e.target.value)} /><br/>
 
-            <button onClick={addLocation}>Save Location</button>
+            <button className='location_btn' onClick={addLocation}>Save Location</button>
         </div>
     </div>
   )
