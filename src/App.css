@@ -13,6 +13,33 @@ body{
     overflow-y: hidden;
 }
 
+/* Nabar */
+.nav {
+    overflow: hidden;
+    background-color: rgba(58, 58, 96, 0.401);
+  }
+  
+  .nav a {
+    float: right;
+    padding: 14px;
+
+  }
+  
+  .nav_btn{
+    padding: 5px 10px 5px 10px;
+    margin: 0 1rem 0 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(178, 233, 195);
+  }
+  .nav .nav_btn:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
+
 /* Home */
 .heading_1{
     color: white;
@@ -30,7 +57,7 @@ body{
    
 }
 
-a{
+.a{
     margin: 0 0 0 15rem;
 }
 
@@ -65,7 +92,7 @@ input{
 }
 
 .location_btn{
-    margin: 3rem 0 0 0;
+    margin: 3rem 2rem 0 1.8rem;
     font-size: 22px;
     font-weight: 700;
     font-family: 'Segoe UI';
