@@ -6,7 +6,9 @@ export default function Home() {
     <div>
 
         <div>
-
+            <h1 className='heading_1'>BE SMART ,</h1>
+            <h1 className='heading_2'>Manage Your Multiple devices with location</h1>
+            
             <a href="./location">
                 <button class="block"><b>Add Location</b></button>
             </a>
@@ -16,6 +18,8 @@ export default function Home() {
             </a>
 
         </div>
+
+       
     </div>
   )
 }

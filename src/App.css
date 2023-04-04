@@ -3,6 +3,30 @@
     padding: 0;
 }
 
-/* body{
-    background-image: url();
-} */
+body{
+    background-image: url(https://assets.entrepreneur.com/content/3x2/2000/1638547674-GettyImages-1206801125.jpg?crop=16:9);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Home */
+.heading_1{
+    color: white;
+    font-size: 60px;
+    margin: 5rem 0 1rem 10rem;
+    padding-top: 3rem;
+    text-shadow: 2px 2px 40px rgb(255, 255, 255);
+}
+
+.heading_2{
+    color: white;
+    font-size: 40px;
+    margin: 0 0 3rem 10rem;
+    text-shadow: 2px 2px 40px rgb(255, 255, 255);
+   
+}
+
