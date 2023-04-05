@@ -18,10 +18,8 @@ export default function SingleShowLogin() {
             const {error} = data;
             throw Error(error)
         }
-        if (res.ok) {
-          alert("success")
-          window.location.href = `/SingleShow?l_name=${l_name}`
-        }
+        if (res.ok) window.location.href = `/SingleShow?l_name=${l_name}`
+        
     } catch (error) {
         console.log(error);
         

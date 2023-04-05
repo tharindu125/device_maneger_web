@@ -16,11 +16,10 @@ export default function SingleShow() {
         const search = window.location.search; // returns the URL query String
         const params = new URLSearchParams(search); 
         const locationFromURL = params.get('l_name');
-        console.log(locationFromURL)
 
         const res = await fetch(`/location/${locationFromURL}` )
         const json = await res.json()
-        console.log(json)
+        // console.log(json)
 
         if (res.ok) {
           setShowLD(json)
@@ -37,11 +36,10 @@ export default function SingleShow() {
       const search = window.location.search; // returns the URL query String
       const params = new URLSearchParams(search); 
       const locationFromURL = params.get('l_name');
-      console.log(locationFromURL)
 
         const res = await fetch(`/device/${locationFromURL}` )
         const json = await res.json()
-        console.log(json)
+        // console.log(json)
 
         if (res.ok) {
           setShowDevice(json)
@@ -51,6 +49,30 @@ export default function SingleShow() {
     fetchLD()
   }, [])
 
+  const deleteContact = async() => {
+    
+    const search = window.location.search; // returns the URL query String
+    const params = new URLSearchParams(search); 
+    const locationFromURL = params.get('l_name');
+    console.log(locationFromURL)
+
+    const res = await fetch(`/device/${locationFromURL}`,{
+        method:'DELETE',
+        headers:{
+            'Content-Type':'application/json'
+        }
+    })
+    
+    if (res.ok) {
+      alert("Delete successfull")
+      window.location.reload()
+    }
+    if (!res.ok) {
+        const data = await res.json()
+        console.log(data);
+    }
+    
+  }
 
   return (
     <>
@@ -67,12 +89,12 @@ export default function SingleShow() {
                   }  
  
               </div>
-              <br/>
+              <br/><br/><br/><br/>
               {/* To show all devices in Specific Location */}
               <div className='form'>
 
                   {showdevice && showdevice.map((detail) => (
-                          <ShowDevice key={detail._id} detail={detail}/>
+                          <ShowDevice key={detail._id} detail={detail} deleteContact={deleteContact}/>
                   ))}   
                     
               </div>

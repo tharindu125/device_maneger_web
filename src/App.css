@@ -133,7 +133,42 @@ input{
 }
 
 .DeviceForm{
+    display: flex;
     margin: 10px;
+}
+
+.deletedevice button{
+    margin-left: 2rem;
+    padding: 5px 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: red;
+    color: #ffffff;
+}
+
+.deletedevice button:hover{
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid rgb(234, 151, 16);
+    border-radius: 10px;
+}
+
+.Add_device button{
+    margin-left: 2rem;
+    padding: 5px 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 34);
+    color: #000000;
+}
+
+.Add_device button:hover{
+    
+    
+    border: 1px solid rgb(233, 196, 28);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 /* showDetails */
@@ -157,9 +192,10 @@ input{
 
 /* AllShow */
 .form{
+    float: left;
     color: white;
-    margin: 0 50rem 0 0;
-    padding: 10px;
+    margin: 0 0rem 0 0;
+    padding: 10px 20px 10px 10px;
     font-size: 20px;
     border: 1px solid rgb(255, 186, 66);
     border-radius: 12px;
