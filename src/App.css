@@ -213,3 +213,185 @@ input{
     text-shadow: 2px 2px 30px rgb(255, 255, 255);
     font-size: 40px;
 }
+
+
+@media only screen and (max-width: 992px) {
+    /* Home */
+    .heading_1{
+        margin: 3rem 0 1rem 5rem;  
+    }
+
+    .heading_2{
+        margin: 0 0 7rem 5rem;
+    }
+
+    .a{
+        margin: 0 0 0 8rem;
+    }
+
+    /* location & device */
+    .locationMain{
+        margin: 3rem 0 1rem 5rem;
+    }
+
+    /* device */
+    .deviceMain{
+        margin: 0 0 1rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+        
+    /* Home */
+    .heading_1{
+        margin: 3rem 0 1rem 5rem;
+        font-size: 50px;
+    }
+
+    .heading_2{
+        margin: 0 0 7rem 5rem; 
+        font-size: 30px;
+    }
+
+    .a{
+        margin: 0 0 0 5rem;
+    }
+
+    .block{
+        font-size: 20px;
+        padding: 8px 12px 8px 12px;
+    }
+
+    .locationMain{
+        margin: 2rem 0 1rem 4rem;
+    }
+
+    /* showDetails */
+    .show_h1{
+        font-size: 30px;
+    }
+    
+    .show_btn{
+        font-size: 20px;   
+    }
+
+    /* SingleShowLogin */
+    .SingleShowLogin_H{
+        margin-right: 1rem;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Home */
+    .heading_1{
+        font-size: 40px;
+        margin: 2rem 0 1rem 3rem;
+        padding-top: 1.5rem;
+    }
+
+    .heading_2{
+        font-size: 22px;
+        margin: 0 0 7rem 3rem;
+    }
+
+    .a{
+        margin: 0 0 0 3rem;
+    }
+
+    .block{
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    /* location & device */
+    .locationMain{
+        margin: 1.5rem 0 1rem 2rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .location_H{
+        font-size: 25px;
+    }
+
+    input{
+        font-size: 15px;
+        margin: 1rem 0 1rem 0;
+        padding: 5px 8px 5px 8px;
+        width: 18rem;
+    }
+
+    .location_btn{
+        margin: 2rem 1rem 0 1rem;
+        font-size: 15px;
+        padding: 5px 8px 5px 8px;
+    }
+
+    /* device */
+    .deviceMain{
+        margin: 0 0 1rem 3rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .device_H{
+        font-size: 25px;
+    }
+
+    .device_p{
+        font-size: 15px;
+        margin: 0.5rem 1rem 2rem 2rem;
+    }
+
+    .device_btn{
+        font-size: 13px;
+        padding: 5px 8px 5px 8px;
+    }
+
+    .DeviceForm{
+        display: flex;
+        margin: 10px;
+    }
+
+    .deletedevice button{
+        margin-left: 1.5rem;
+        padding: 3px 5px;
+        border-radius: 10px;
+    }
+
+    .Add_device button{
+        margin-left: 2rem;
+        padding: 3px 5px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    /* showDetails */
+    .show_h1{
+        font-size: 20px;
+        margin: 0.5rem 0.8rem 1rem 0.5rem;
+    }
+
+    .show_btn{
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+
+    }
+
+    /* AllShow */
+    .form{
+        padding: 5px 10px 5px 5px;
+        font-size: 15px;
+    }
+    .detailForm{
+        margin: 5px;
+    }
+
+    /* SingleShowLogin */
+    .SingleShowLogin_H{
+        padding-top: 2rem;
+        font-size: 20px;
+    }
+
+}
