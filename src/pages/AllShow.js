@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import ShowAll from '../components/ShowAll'
+import React, { useState, useEffect} from 'react'
+import ShowAllLocation from '../components/ShowAllLocation'
 
 export default function AllShow() {
 
@@ -27,12 +27,12 @@ export default function AllShow() {
 
             <div>
                 <h1 className='show_h1'>All Locations</h1>
-                </div>
-                <div className='form'>
+            </div>
+            <div className='form'>
 
-                {showLocation && showLocation.map((detail) => (
-                        <ShowAll key={detail._id} detail={detail}/>
-                ))}   
+                    {showLocation && showLocation.map((detail) => (
+                            <ShowAllLocation key={detail._id} detail={detail}/>
+                    ))}   
                         
             </div>
                     

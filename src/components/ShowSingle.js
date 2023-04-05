@@ -1,12 +1,10 @@
-const LDList = ({devices}) => {
+const LDList = ({detail}) => {
     return(
-        <div className="detailForm">
+        <div className="DeviceForm">
             
-            <p><strong>Location Name : </strong>{devices.l_name}</p>
-            {/* <p><strong>User Second Name :</strong>{detail.l_name}</p>
-            <p><strong>User Mobile Number :</strong>{detail.m_number}</p>
-            <p><strong>User E-mail :</strong>{detail.email}</p>
-            <p><strong>Created Date :</strong>{detail.createdAt}</p> */}
+            
+            <p> <strong>&#9898; Device Serial number :</strong>{detail.s_number} </p>
+            <p> <strong>Device Type :</strong>{detail.d_type} </p>
             
         </div>
     )

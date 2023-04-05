@@ -104,6 +104,11 @@ input{
 }
 
 /* device */
+.deviceMain{
+    margin: 0 0 1rem 10rem;
+    padding: 3rem 0 0 0;
+}
+
 .device_H{
     color: rgb(255, 5, 5);
     font-size: 35px;
@@ -125,6 +130,10 @@ input{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 2rem;
     background-color: antiquewhite;
+}
+
+.DeviceForm{
+    margin: 10px;
 }
 
 /* showDetails */

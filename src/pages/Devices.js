@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 
 export default function Devices() {
 
+    const [l_name, setName] = useState('')
     const [s_number, setNumber] = useState('')
     const [d_type,setType] = useState('')
 
-
-    const addLocation = async() => {
+    //Add one ddevice No loop
+    const addDevice = async() => {
         try {
             
             const res = await fetch('/device',{
@@ -15,7 +16,7 @@ export default function Devices() {
                     'Content-Type':'application/json'
                 },
                 
-                body:JSON.stringify({s_number, d_type})              
+                body:JSON.stringify({l_name, s_number, d_type})              
             })
             
             const data = await res.json()
@@ -31,7 +32,8 @@ export default function Devices() {
             }
     }
 
-    const reAddLocation = async() => {
+    //Add multiple devices with loop
+    const reAddDevice = async() => {
       try {
           
           const res = await fetch('/device',{
@@ -40,7 +42,7 @@ export default function Devices() {
                   'Content-Type':'application/json'
               },
               
-              body:JSON.stringify({s_number, d_type})              
+              body:JSON.stringify({l_name, s_number, d_type})              
           })
           
           const data = await res.json()
@@ -60,7 +62,8 @@ export default function Devices() {
 
   return (
     <div>
-        <div className='locationMain'>
+        <div className='deviceMain'>
+          
           <div>
               <h1 className='device_H'>IMPORTENT</h1>
               <p className='device_p'>If you didn't save your Location, Please Add your Location before add Device.</p>
@@ -72,11 +75,12 @@ export default function Devices() {
 
           <div>
           <h1 className='location_H'>Add Your Device</h1>
+            <input type='text' placeholder='Device Location' value={l_name} onChange={e => setName(e.target.value)} /><br/>
             <input type='text' placeholder='Serial Number' value={s_number} onChange={e => setNumber(e.target.value)} /><br/>
             <input type='textarea' placeholder='Device type' value={d_type} onChange={e => setType(e.target.value)} /><br/>
             
-            <button className='location_btn' onClick={addLocation}>Add Device</button>
-            <button className='location_btn' onClick={reAddLocation}>Add & Reenter</button>
+            <button className='location_btn' onClick={addDevice}>Add Device</button> {/*Add one ddevice No loop*/}
+            <button className='location_btn' onClick={reAddDevice}>Add & Reenter</button>  {/*Add muitiple ddevices with loop*/}
           </div>
             
         </div>
